@@ -1,0 +1,79 @@
+.card {
+    width: 300px;
+    height: 280px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.fWrapper {
+    border-radius: 15px;
+    background-color: rgb(228, 228, 228);
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.restoPerguntas {
+    background-color: rgb(194, 194, 194);
+    height: 150px;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    border-top-left-radius: 0px; border-top-right-radius: 0px;
+    transition: .3s ease-in-out;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    height: 5px;
+  }
+
+.restoPerguntas > * {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: .2s ease-in-out;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+.restoPerguntas > *:hover {
+    filter: brightness(1.5);
+    background: rgb(79, 79, 79);
+}
+
+.allWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+p {
+    cursor: pointer;
+}
